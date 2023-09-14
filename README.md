@@ -1,10 +1,12 @@
-# React + Vite
+# Simple Minecraft clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Minecraft](https://minecraft.net/) clone made with:
 
-Currently, two official plugins are available:
+* [React](https://reactjs.org/) 
+* [ThreeJS](https://threejs.org/) (Libreria de 3D para JS)
+    - [@react-three/cannon](https://cannon.pmnd.rs/) 
+    - [@react-three/drei](https://drei.pmnd.rs/)
+    - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/)
+- [ViteJS](https://vitejs.dev) (Packager)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# minecraft-clone
-# minecraft-clone
+Based on the video of [freeCodeCamp](https://www.youtube.com/watch?v=qpOZup_3P_A)
