@@ -39,5 +39,5 @@ body,
 
 .texture-selector img.selected {
   border-color: #fff;
-  border: 5px solid #bbb;
+  border: 5px solid #fff;
 }

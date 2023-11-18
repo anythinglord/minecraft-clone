@@ -6,6 +6,7 @@ import * as textures from '../images/textures'
 export const Cube = ({ id, position, texture }) => {
   const [isHovered, setIsHovered] = useState(false)
   const [removeCube] = useStore(state => [state.removeCube])
+  const [addCube] = useStore(state => [state.addCube])
 
   const [ref] = useBox(() => ({
     type: 'Static',
@@ -13,6 +14,15 @@ export const Cube = ({ id, position, texture }) => {
   }))
 
   const activeTexture = textures[texture + 'Texture']
+
+  const handleClickCube = event => {
+    event.stopPropagation()
+    const [x, y, z] = Object.values(event.point)
+      .map(n => Math.ceil(n))
+    45
+    console.log('cube => ',x,y,z)
+    addCube(x, y, z)
+  }
 
   return (
     <mesh
@@ -27,7 +37,7 @@ export const Cube = ({ id, position, texture }) => {
       ref={ref}
       onClick={(e) => {
         e.stopPropagation()
-
+        handleClickCube(e)
         if (e.altKey) {
           removeCube(id)
         }
